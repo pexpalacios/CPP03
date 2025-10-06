@@ -6,7 +6,7 @@
 /*   By: penpalac <penpalac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/09 16:25:07 by penpalac          #+#    #+#             */
-/*   Updated: 2025/10/06 17:42:30 by penpalac         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:02:51 by penpalac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class DiamondTrap: public ScavTrap, public FragTrap
 		DiamondTrap &operator=(DiamondTrap &copy);		
 		
 		void whoAmI();
-		void attack(std::string const &target);
+		using ScavTrap::attack;
 };
 
 #endif
